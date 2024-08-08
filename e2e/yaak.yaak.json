@@ -1,0 +1,93 @@
+{
+  "yaakVersion": "2024.7.0",
+  "yaakSchema": 2,
+  "timestamp": "2024-08-07T05:27:16.786613",
+  "resources": {
+    "workspaces": [
+      {
+        "id": "wk_GybAvf1VnS",
+        "model": "workspace",
+        "createdAt": "2024-04-13T18:15:33",
+        "updatedAt": "2024-04-13T18:15:50",
+        "name": "WS",
+        "description": "",
+        "variables": [],
+        "settingValidateCertificates": false,
+        "settingFollowRedirects": true,
+        "settingRequestTimeout": 0
+      }
+    ],
+    "environments": [],
+    "folders": [
+      {
+        "createdAt": "2024-08-07T04:12:39",
+        "updatedAt": "2024-08-07T04:12:39",
+        "id": "fl_nwOUtnESZb",
+        "workspaceId": "wk_GybAvf1VnS",
+        "folderId": null,
+        "model": "folder",
+        "name": "mrlemoos.dev",
+        "sortPriority": -1723003959312.0
+      },
+      {
+        "createdAt": "2024-08-07T04:12:43",
+        "updatedAt": "2024-08-07T04:12:43",
+        "id": "fl_HcaBEfFhCE",
+        "workspaceId": "wk_GybAvf1VnS",
+        "folderId": "fl_nwOUtnESZb",
+        "model": "folder",
+        "name": "ws",
+        "sortPriority": -1723003963193.0
+      },
+      {
+        "createdAt": "2024-08-07T04:17:49",
+        "updatedAt": "2024-08-07T04:17:49",
+        "id": "fl_VVelNibcvB",
+        "workspaceId": "wk_GybAvf1VnS",
+        "folderId": "fl_HcaBEfFhCE",
+        "model": "folder",
+        "name": "Push Http Event",
+        "sortPriority": -1723004269303.0
+      }
+    ],
+    "httpRequests": [
+      {
+        "createdAt": "2024-08-07T04:12:46",
+        "updatedAt": "2024-08-07T05:21:44",
+        "id": "rq_RS04ljd4da",
+        "workspaceId": "wk_GybAvf1VnS",
+        "folderId": "fl_VVelNibcvB",
+        "model": "http_request",
+        "sortPriority": 0.0,
+        "name": "Push Http Event",
+        "url": "http://localhost:3000/events",
+        "urlParameters": [],
+        "method": "POST",
+        "body": {
+          "text": "{\n  \"method\": \"POST\",\n  \"url\": \"http://api.github.com/repos/facebook/react\"\n}"
+        },
+        "bodyType": "application/json",
+        "authentication": {},
+        "authenticationType": null,
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "enabled": true,
+            "name": "Authorization",
+            "value": "Bearer 123"
+          },
+          {
+            "enabled": true,
+            "name": "",
+            "value": ""
+          }
+        ]
+      }
+    ],
+    "grpcRequests": []
+  }
+}
